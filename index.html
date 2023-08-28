@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="/estilos.css">
+    <title>Parcial</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <h1 id="titulo">FORMULARIO</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+            </div>
+            <div class="col-sm-4">
+                <h2 id="intereses"> 1.Datos personales </h2>
+            </div>
+        </div>
+        <form action="/formulario" method="post" >
+            <div class="row">
+                <div class="col-sm-6">
+                    <label for="Nombre"> Nombre Completo </label>
+                    <input type="text"  id="Nombre" name="Nombre"/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <label for="Correo"> Correo Electronico </label>
+                    <input type="email"  id="Correo" name="Correo"/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <label for="Contraseña"> Contraseña </label>
+                    <input type="password" id="Contraseña" name="Contraseña"/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                        <label for="ContraseñaR"> Confirmación Contraseña </label>
+                    <input type="password" id="ContraseñaR" name="ContraseñaR"/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="Sexo">
+                        <label for="Genero" id="Genero"> Genero </label>
+                        <br>
+                        <br>
+                        <input type="radio" id="Hombre" name="Genero">
+                        <label for="Hombre"> Hombre </label>
+                        <input type="radio" id="Mujer" name="Genero">
+                        <label for="Hombre"> Mujer </label>
+                        <input type="radio" id="Prefiero no decirlo" name="Genero">
+                        <label for="Hombre"> Prefiero no decirlo </label>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-sm-6">
+                    <label for="Pais" id="Pais"> Pais </label>
+                    <select>
+                        <option disabled=""> Seleccione una opción </option>
+                        <option value="Colombia"> Alemania</option>
+                        <option value="Colombia"> Canada</option>
+                        <option value="Colombia"> Colombia</option>
+                        <option value="Colombia"> Estados Unidos</option>
+                        <option value="Colombia"> Holanda</option>
+                        <option value="Colombia"> Mexico</option>
+                        <option value="Colombia"> Puerto Rico</option>
+                        <option value="Colombia"> República Dominicana</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                </div>
+                <div class="col-sm-4">
+                    <h2 id="intereses"> 2.Intereses </h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-9">
+                    <p> ¿Si tuviera que escoger entre estos deportes cual seria su favorito? </p>
+                    <div class="col-sm-6">
+                        <label for="Futbol"> Futbol</label>
+                        <input type="checkbox" name="Futbol" id="Futbol"/>
+                        <br>
+                        <label for="Baloncesto"> Baloncesto</label>
+                        <input type="checkbox" name="Baloncesto" id="Baloncesto"/>
+                        <br>
+                        <label for="Tenis de campo"> Tenis de campo </label>
+                        <input type="checkbox" name="Tenis de campo" id="Tenis de campo"/>
+                        <br>
+                        <label for="Tenis de mesa"> Tenis de mesa </label>
+                        <input type="checkbox" name="Tenis de mesa" id="Tenis de mesa"/>
+                    </div>
+                </div>
+            </div>
+            <br>    
+            <div class="row">
+                <div class="col-sm-9">
+                    <p> ¿Que tipo de trama le gusta ver en una pelicula? </p>
+                    <div class="col-sm-6">
+                        <label for="Terror"> Terror </label>
+                        <input type="checkbox" name="Terror" id="Terror"/>
+                        <br>
+                        <label for="Drama"> Drama </label>
+                        <input type="checkbox" name="Drama" id="Drama"/>
+                        <br>
+                        <label for="Comedia"> Comedia </label>
+                        <input type="checkbox" name="Comedia" id="Comedia"/>
+                        <br>
+                        <label for="Fantasia"> Fantasia </label>
+                        <input type="checkbox" name="" id="Fantasia"/>
+                    </div>
+                </div>
+            </div>
+            <br>    
+            <div class="row">
+                <div class="col-sm-9">
+                    <p> ¿Que tipo de tema le interesa mas? </p>
+                    <div class="col-sm-6">
+                        <label for="Tecnologia"> Tecnologia </label>
+                        <input type="checkbox" name="Tecnologia" id="Tecnologia"/>
+                        <br>
+                        <label for="Ciencia"> Ciencia </label>
+                        <input type="checkbox" name="Ciencia" id="Ciencia"/>
+                        <br>
+                        <label for="Fisica"> Fisica </label>
+                        <input type="checkbox" name="Fisica" id="Fisica"/>
+                        <br>
+                        <label for="Anatomia"> Anatomia </label>
+                        <input type="checkbox" name="" id="Anatomia"/>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="row">
+                <div class="col-sm-12">
+                    <label for="Comentario"> Comentarios </label>
+                    <br>
+                    <textarea rows="5" cols="120" id="Comentario" name="Comentario" placeholder="Caja de comentario"></textarea>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-sm-12">
+                    <p>
+                        Sube un archivo:
+                        <input type="file" name="archivosubido">
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-9"></div>
+                <div class="col-sm-3"><input type="submit" value="Enviar datos"></div>
+            </div>
+            <br>
+            <br>
+        </form>
+    </div>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>

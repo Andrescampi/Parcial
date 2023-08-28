@@ -1,0 +1,33 @@
+.col-sm-12{
+    text-align: center;
+}
+.col-sm-6{
+    text-align: right;
+}
+.col-sm-9{
+    text-align: center;
+}
+.col-sm-3{
+    text-align: right;
+}
+.col-sm-4{
+    text-align: left;
+}
+#Nombre{
+    margin-top: 20px;
+}
+#Correo{
+    margin-top: 20px;
+}
+#Contraseña{
+    margin-top: 20px;
+}
+#ContraseñaR{
+    margin-top: 20px;
+}
+#Genero{
+    margin-top: 20px;
+}
+#intereses{
+    margin-top: 20px;
+}
